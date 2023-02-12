@@ -41,7 +41,7 @@ const App = () => {
 
   const markDone = (id) => {
     let input = list.map(task => {
-      if (task.id == id) {
+      if (task.id === id) {
         return ({ ...task, status: !task.status })
       }
       return task;
